@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akhilshetty.tent.MainActivity"
+    android:backgroundTint="#80FFFFFF"
+    android:backgroundTintMode="src_over"
+    android:background="@drawable/home4"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/FullName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/icon2" />
+
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/usernameText"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/usernameText"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:padding="30dp"
+        android:text="RENT A TENT"
+        android:textColor="@color/common_google_signin_btn_text_light_focused"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mainText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainText" />
+
+    <EditText
+        android:id="@+id/pwdText"
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/usernameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/usernameText" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="89dp"
+        android:layout_height="46dp"
+        android:layout_alignTop="@+id/pwdText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="loginButton"
+        android:text="Log In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="89dp"
+        android:layout_height="46dp"
+        android:layout_alignLeft="@+id/loginButton"
+        android:layout_alignStart="@+id/loginButton"
+        android:layout_alignTop="@+id/loginButton"
+        android:layout_marginTop="63dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:onClick="signUp"
+        android:text="Sign-Up"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/gsignin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pwdText"
+        android:layout_alignLeft="@+id/pwdText"
+        android:layout_alignRight="@+id/pwdText"
+        android:layout_alignStart="@+id/pwdText"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="22dp"></com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="OR"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+</android.widget.RelativeLayout>
+
+
