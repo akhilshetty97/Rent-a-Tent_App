@@ -1,4 +1,4 @@
-# Tent
+# Android Application- Rent a Tent
 'Rent A Tent' attempts to provide rental houses via app. Users have an option to rent an
 apartment or put it up on rent.
 The user will first have to create an account on the app. After log in, user can find a rental
